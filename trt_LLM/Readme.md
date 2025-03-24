@@ -1,4 +1,5 @@
-Installation guide for Triton Inference Server & TensorRT_LLM (Backend Engine)
+Installation guide for Triton Inference Server(Backend Engine) & TensorRT_LLM 
+[RTX 3090, Nvidia Driver Version: 560.35.03, Cuda v12.4]
 ==========================================
 
 ### Installing NVIDIA Container Toolkit
@@ -70,6 +71,7 @@ Reference: https://nvidia.github.io/TensorRT-LLM/installation/linux.html
 Reference: https://nvidia.github.io/TensorRT-LLM/installation/linux.html
 
 ## 1. Retrieve and launch the Docker container (optional)
+   # Recommended to mount a directory from the host PC in Docker to store and reuse downloaded LLM models.
    ```console
    # Pre-install the environment using the NVIDIA Container Toolkit to avoid manual environment configuration
    # docker run --rm --ipc=host --runtime=nvidia --gpus '"device=0"' --entrypoint /bin/bash -it nvidia/cuda:12.4.1-devel-ubuntu22.04
